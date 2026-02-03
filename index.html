@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cplace Platform | Premium Applications</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'cplace-blue': '#0078BD',
+              'cplace-blue-light': '#E6F2F9',
+              'cplace-navy': '#002B5B',
+              'cplace-header': '#5f6b7d',
+              'cplace-border': '#E2E8F0',
+              'cplace-text-soft': '#64748b',
+            },
+            fontFamily: {
+              sans: ['"Roboto Condensed"', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Roboto Condensed', sans-serif; overflow: hidden; background-color: #FFFFFF; }
+        ::-webkit-scrollbar { width: 6px; height: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+        
+        .selection-ring {
+            position: absolute;
+            inset: -1px;
+            border: 2px solid #0078BD;
+            pointer-events: none;
+            z-index: 20;
+        }
+
+        .compact-row { height: 34px; }
+        
+        .indent-guide {
+            position: absolute;
+            left: 12px;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background-color: #F1F5F9;
+        }
+
+        .platform-shadow {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        
+        .font-black { font-weight: 900; }
+        .font-bold { font-weight: 700; }
+
+        input::placeholder { color: #cbd5e1; }
+        
+        .tr-hover:hover { background-color: #f1f5f9 !important; }
+        .cell-selected { background-color: #E6F2F9 !important; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.35.0"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
